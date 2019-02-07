@@ -18,7 +18,7 @@ body {
 }
 
 .title {
-    color: white;
+    color: #f3f3f3;
     top: 50%;
     transform: translateY(-50%);
     position: relative;
@@ -29,8 +29,16 @@ body {
     text-align: center;
 }
 
-.material-icons {
-    position: inline;
+.inline {
+    display: inline;
+    vertical-align: middle;
+}
+
+.copyright {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #161d27;
+    color: #f3f3f3;
 }
 
 @media only screen and (min-width: 600px) {
@@ -40,10 +48,7 @@ body {
 
     .water-image {
         height: 300px;
-        overflow: hidden;
     }
-
-
 } 
 
 @media only screen and (min-width: 768px) {
@@ -53,10 +58,7 @@ body {
 
     .water-image {
         height: 250px;
-        overflow: hidden;
     }
-
-
 }
 
 @media only screen and (min-width: 992px) {
