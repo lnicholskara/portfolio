@@ -1,28 +1,30 @@
-body {
+body, html {
+    /*height: 100%;*/
     font-family: 'Rubik', sans-serif;
-    color: #161d27;
-    background-color: #f3f3f3;
-}
+    color: #00042a;
+  }
 
-.banner {  
-    width: 100%;
-    height: 275px;
-    overflow: hidden;
-}
+.parallax {
+    background-image:linear-gradient(rgba(0, 0, 255, 0.1),rgba(0, 0, 0, .1),rgba(255, 255, 0, .0001),transparent);
 
-.water-image {
-    position: absolute;
-    width: 100%; 
-    height: 275px;
-    overflow: hidden;
+    background-image: url("../images/nepal-2184940.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .title {
-    color: #f3f3f3;
+    color: #00042a;
+    vertical-align: middle;
+    text-align: center;
     top: 50%;
-    transform: translateY(-50%);
-    position: relative;
-    text-align: center
+    transform: translate(0%, 50%);
 }
 
 .display-3 {
@@ -36,47 +38,44 @@ body {
 
 .copyright {
     text-align: center;
-    vertical-align: middle;
-    background-color: #161d27;
-    color: #f3f3f3;
+    vertical-align: baseline;
+    background-image:linear-gradient(rgba(238,237,217,.3),rgba(248,208,123, .5),rgba(157,131,151,.6),rgba(75,130,204,.8),rgba(0,134,231,.9),rgba(1,75,198,.9),rgba(0,28,128,.9));
+    color: rgba(238,237,217,.55);
 }
 
-@media only screen and (min-width: 600px) {
-    .banner {
-        height: 300px;   
+@media only screen and (max-width: 520px) {
+    .title {
+    top: 50%;
+    transform: translate(0%, 25%);
+    font-size: 55px;
     }
 
-    .water-image {
-        height: 300px;
+    .parallax {
+        min-height: 150px; 
     }
+
+    #hide-div {
+        visibility: hidden;
+        clear: both;
+        float: left;
+        display: none;
+
+    }
+
+    .portfolio {
+        border-top: 2px solid rgba(248,208,123, .5);
+    }
+
 } 
-
+/*
 @media only screen and (min-width: 768px) {
-    .banner {
-        height: 250px;   
-    }
 
-    .water-image {
-        height: 250px;
-    }
 }
 
 @media only screen and (min-width: 992px) {
-    .banner {
-        height: 250px;   
-    }
 
-    .water-image {
-        height: 250px;
-    }
 } 
 
 @media only screen and (min-width: 1200px) {
-    .banner {
-        height: 300px;   
-    }
 
-    .water-image {
-        height: 300px;
-    }
 }
