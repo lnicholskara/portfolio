@@ -1,18 +1,12 @@
 body, html {
-    /*height: 100%;*/
     font-family: 'Rubik', sans-serif;
     color: #00042a;
   }
 
 .parallax {
     background-image:linear-gradient(rgba(0, 0, 255, 0.1),rgba(0, 0, 0, .1),rgba(255, 255, 0, .0001),transparent);
-
     background-image: url("../images/nepal-2184940.jpg");
-
-    /* Set a specific height */
     min-height: 300px; 
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -36,12 +30,62 @@ body, html {
     vertical-align: middle;
 }
 
+.word-wrap {
+    word-wrap: break-word;
+}
+
+p {
+    line-height: 1.25em;
+    text-align: justify;
+}
+
+.resume {
+    text-align: center;
+}
+
+#resume-link {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.port-title {
+    font-size: 2.5em;
+    text-align: center;
+}
+
 .copyright {
     text-align: center;
     vertical-align: baseline;
     background-image:linear-gradient(rgba(238,237,217,.3),rgba(248,208,123, .5),rgba(157,131,151,.6),rgba(75,130,204,.8),rgba(0,134,231,.9),rgba(1,75,198,.9),rgba(0,28,128,.9));
     color: rgba(238,237,217,.55);
 }
+
+.links:link {
+    color: #00042a;
+}
+
+.links:visited {
+    color: #00042a;
+}
+
+.links:hover {
+    color: rgba(1,75,198);
+    text-decoration: none;
+}
+
+.resume:link {
+    color: rgba(1,75,198);
+}
+
+.resume:visited {
+    color: rgba(1,75,198);
+}
+
+.resume:hover {
+    color: #00042a;
+    text-decoration: none;
+}
+
 
 @media only screen and (max-width: 520px) {
     .title {
@@ -63,19 +107,8 @@ body, html {
     }
 
     .portfolio {
-        border-top: 2px solid rgba(248,208,123, .5);
+        border-top: 3px solid rgba(248,208,123, .5);
+        padding-top: 20px;
     }
-
-} 
-/*
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 992px) {
-
-} 
-
-@media only screen and (min-width: 1200px) {
 
 }
