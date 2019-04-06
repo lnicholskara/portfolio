@@ -19,10 +19,26 @@ body, html {
     text-align: center;
     top: 50%;
     transform: translate(0%, 50%);
+    font-weight: 600;
+}
+
+.title::selection {
+    text-shadow: none
+}
+
+.subtitle {
+    font-size: 38px;
+}
+
+#subtitle {
+    font-weight: normal;
+    color: #faf7ee;
+    text-shadow: none
 }
 
 .display-3 {
     text-align: center;
+    color: #00042a;
 }
 
 .inline {
